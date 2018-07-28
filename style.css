@@ -1,7 +1,4 @@
 body {
-  background-image:url("mikhail-alexandrov-187882-unsplash.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
   font-family:'Maitree', serif;
   font-weight:400;
 }
@@ -11,7 +8,7 @@ h1, h2 {
   margin:0 auto 16px;
   text-align:center;
 }
-h1 { font-size:28px; }
+h2 { font-size:28px; }
 p {
   font-size:18px;
   line-height:1.5;
@@ -26,23 +23,31 @@ a:hover {
   color:#e67e22;
 }
 header {
-  background-color:white;
-  padding:20px;
+  background-image:url("mikhail-alexandrov-187882-unsplash.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:400px;
+}
+.text-wrap {
+  background-color: rgba(0,0,0,0.3);
+  box-sizing:border-box;
+  height:400px;
+  padding:90px 32px 0;
   text-align:center;
 }
 .site-name {
-  color:#6C7A89;
-  font-size:20px;
-}
-.container {
-  background-color:white;
-  border-radius:10px;
-  margin:60px auto;
-  max-width:600px;
-  padding:40px;
+  /*color:#6C7A89;*/
+  border:2px solid #fff;
+  border-radius:20px;
+  color:#fff;
+  display:inline-block;
+  font-size:40px;
+  padding:80px 30px;
 }
 section {
-  margin:0 auto 60px; 
+  margin:60px auto;
+  max-width:600px;
+  padding:0 32px;
 }
 .video {
   height:0;
@@ -57,4 +62,7 @@ section {
   position:absolute;
   top:0;
   width:100%;
+}
+@media (max-width: 600px) {
+  .site-name { font-size:30px; }
 }
